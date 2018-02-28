@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hard Loop</title>
+</head>
+
+<body>
+
+     <script>
+
+        // create dataz
+
+        let myFarm = [ 'chicken', 'pig', 'cows', 'horses', 'ostrich'];
+
+        // loop through array
+
+        console.log(myFarm);
+        for(var i = 0; i < myFarm.length; i++) {
+
+            // pluck out first letter
+
+            var firstLetter = myFarm[i].charAt(0);
+
+            // check if first letter begins with c or o
+
+            if(firstLetter === 'c' ) {
+                console.log('i start with o');
+            }
+            else if(firstLetter === 'o' ) {
+                console.log('i start with o');
+            }
+             else  {
+                console.log('i start with' +firstLetter);
+             }
+        }
+
+    </script>
+
+</body>
+
+</html>

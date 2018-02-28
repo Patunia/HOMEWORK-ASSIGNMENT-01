@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Events!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  </head>
+  <body>
+    <h3>Select one of the following keys: r,p,s... and play against THE machine</h3>
+    <h1>You Chose: <span ="userText"></span></h1>
+    <h1>Computer Chose: <span ="compChoice"></span></h1>
+    <h1>WINNER: <span ="winScore"></span></h1>
+    <h1>LOSER: <span ="loseScore"></span></h1>
+    <h1>Ties (bow): <span ="tieScore"></span></h1>
+
+  <script type="text/javascript">
+        var userText = document.getElementById("userText");
+
+        var spanText = userText.textContext;
+        spanText = event.key; //this is you
+        console.log(event);
+
+        var spanText = compChoice.textContext;
+        spanText = event.key; //this is da machine
+        console.log(event);
+
+        document.onkeyup = function(event) {
+
+        // Determines which key was pressed.
+        var userGuess = event.key;
+
+        // the Computer's guess.
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        if (userText compare with computerChoice)
+
+        else if ()
+
+        else ()
+
+        let win
+
+    <!-- We have to put this at the end of our document to ensure the user-text
+         span exists when we try to access it. -->
+    <script type="text/javascript">
+      // Let's start by grabbing a reference to the <span> below.
+      var userText = document.getElementById("user-text");
+
+      // Next, we give JavaScript a function to execute when onkeyup event fires.
+      document.onkeyup = function(event) {
+          var spanText = userText.textContext;
+          spanText = event.key; //this is a letter
+          console.log(event);
+      };
+    </script>
+  </body>
+</html>
